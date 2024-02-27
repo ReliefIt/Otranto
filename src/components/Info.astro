@@ -1,0 +1,114 @@
+---
+
+---
+
+<section class="info">
+  <article class="info-article">
+    <h2 class="info-article-subtitle">Aca va info sobre conveniencia</h2>
+    <svg
+      data-slot="icon"
+      fill="none"
+      stroke-width="1.5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+    </svg>
+    <p>Y aca una datita cortita</p>
+  </article>
+
+  <article class="info-article">
+    <h2 class="info-article-subtitle">Una conveniencia mas</h2>
+    <p>Y aca una datita cortita extra</p>
+  </article>
+
+  <article class="info-article">
+    <h2 class="info-article-subtitle">Otra info sobre alguna conveniencia</h2>
+    <svg
+      data-slot="icon"
+      fill="none"
+      stroke-width="1.5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+    </svg>
+    <p>Y aca una datita cortita sobre esto</p>
+  </article>
+</section>
+
+<style>
+  .info {
+    padding: 50px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 740px;
+    gap: 15px;
+  }
+
+  .info-article {
+    gap: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .info svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .info p {
+    font-size: 20px;
+  }
+
+  .info-article-subtitle {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* MEDIA QUERY INFO */
+
+  @media (min-width: 1440px) {
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      height: 392px;
+      padding: 0;
+      gap: 80px;
+    }
+
+    .info-article {
+      width: 284px;
+      height: 184px;
+    }
+
+    .info-article-subtitle {
+      line-height: 1;
+      font-weight: bold;
+      font-size: 48px;
+    }
+
+    .info svg {
+      display: none;
+    }
+  }
+</style>

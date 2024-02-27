@@ -1,0 +1,174 @@
+---
+
+---
+
+<section class="slider-section">
+  <div class="slider-image-desktop"></div>
+  <article class="slider-article">
+    <h2 class="slider-subtitle">
+      una cobertura para el <br /><span>hogar</span>
+    </h2>
+    <p>Aca una datita cortita sobre esto</p>
+    <div class="slider-group">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14 7L9 12L14 17"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+
+      <svg
+        width="156"
+        height="24"
+        viewBox="0 0 156 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 11C9.65687 11 11 9.65687 11 8C11 6.34313 9.65687 5 8 5C6.34313 5 5 6.34313 5 8C5 9.65687 6.34313 11 8 11Z"
+          fill="white"
+          stroke="white"
+          stroke-width="4"></path>
+        <path
+          d="M36 11C37.6569 11 39 9.65687 39 8C39 6.34313 37.6569 5 36 5C34.3431 5 33 6.34313 33 8C33 9.65687 34.3431 11 36 11Z"
+          fill="#D1D1D1"
+          stroke="#D1D1D1"
+          stroke-width="4"></path>
+        <path
+          d="M64 11C65.6569 11 67 9.65687 67 8C67 6.34313 65.6569 5 64 5C62.3431 5 61 6.34313 61 8C61 9.65687 62.3431 11 64 11Z"
+          fill="#D1D1D1"
+          stroke="#D1D1D1"
+          stroke-width="4"></path>
+        <path
+          d="M92 11C93.6569 11 95 9.65687 95 8C95 6.34313 93.6569 5 92 5C90.3431 5 89 6.34313 89 8C89 9.65687 90.3431 11 92 11Z"
+          fill="#D1D1D1"
+          stroke="#D1D1D1"
+          stroke-width="4"></path>
+        <path
+          d="M120 11C121.657 11 123 9.65687 123 8C123 6.34313 121.657 5 120 5C118.343 5 117 6.34313 117 8C117 9.65687 118.343 11 120 11Z"
+          fill="#D1D1D1"
+          stroke="#D1D1D1"
+          stroke-width="4"></path>
+        <path
+          d="M148 11C149.657 11 151 9.65687 151 8C151 6.34313 149.657 5 148 5C146.343 5 145 6.34313 145 8C145 9.65687 146.343 11 148 11Z"
+          fill="#D1D1D1"
+          stroke="#D1D1D1"
+          stroke-width="4"></path>
+      </svg>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 17L15 12L10 7"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </div>
+  </article>
+</section>
+
+<style>
+  .slider-image-desktop {
+    display: none;
+  }
+
+  .slider-article {
+    background-image: url("public/image-bottom -mobile.webp");
+    background-position: center center;
+    background-size: cover;
+    height: 344px;
+    padding: 12px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .slider-article h2 {
+    font-size: 48px;
+    color: #ffff;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .slider-article p {
+    color: #ffff;
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .slider-article span {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .slider-group {
+    display: flex;
+    text-align: end;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  .slider-group svg {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+  }
+
+  /* MEDIA QUERY DESKTOP */
+
+  @media (min-width: 1440px) {
+    .slider-article {
+      background-image: none;
+      background-color: #abe6ff;
+      width: 50%;
+      height: 544px;
+      padding: 0 0 0 35px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .slider-image-desktop {
+      background-image: url("public/image-bottom.webp");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      height: 544px;
+      width: 50%;
+    }
+
+    .slider-section {
+      height: 544px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .slider-article h2 {
+      text-wrap: pretty;
+      font-size: 64px;
+      color: #000215;
+      text-shadow: none;
+    }
+
+    .slider-group {
+      width: 398px;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+</style>

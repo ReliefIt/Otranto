@@ -1,0 +1,183 @@
+---
+
+---
+
+<header class="header">
+  <div class="header-container-desktop">
+    <div class="header-container">
+      <h1 class="header-title">
+        disfruta<br />de<br />toda tu<br /><span>tranquilidad</span>
+      </h1>
+      <p class="header-description">
+        Encontramos la cobertura que mejor se adapte a mejorar tu calidad de
+        vida.
+      </p>
+    </div>
+    <div class="header-button-container">
+      <button class="header-button"> Obtene Tu Cobertura</button>
+    </div>
+  </div>
+  <div class="header-background-desktop"></div>
+</header>
+
+<style>
+  /* Estilos para la animación */
+
+  .header-container, .header-button-container {
+    opacity: 0; /* Inicialmente transparente */
+    transform: translateX(-100%); /* Desplazar hacia la izquierda */
+    animation: slide-from-left-animation 1s ease-out forwards; /* Aplicar animación */
+  }
+
+  /* Definición de la animación */
+  @keyframes slide-from-left-animation {
+    from {
+      opacity: 0;
+      transform: translateX(
+        -100%
+      ); /* Comienza fuera de la pantalla hacia la izquierda */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Termina en su posición original */
+    }
+  }
+
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .header-background-desktop {
+    display: none;
+  }
+
+  header {
+    background-image: url("public/image-header-mobile.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 738px;
+    padding: 32px 0;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 50%;
+    min-width: 360px;
+  }
+
+  .header-title {
+    margin: 0 24px 0 8px;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: -4px;
+  }
+
+  .header-title span {
+    font-weight: 100;
+  }
+
+  .header-description {
+    text-align: left;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 24px 0 8px;
+    font-size: 20px;
+  }
+
+  .header-button-container {
+    height: 369px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .header-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 254px;
+    height: 58px;
+    background-color: #0036c2;
+    transition: all 0.4s ease;
+  }
+
+  .header-button:hover {
+    background-color: #0037c2b2;
+    transition: all 0.4s ease;
+  }
+
+  /* MEDIA QUERY DESKTOP */
+
+  @media (min-width: 1440px) {
+    .header-background-desktop {
+      display: flex;
+      background-image: url("public/image-header.webp");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 50%;
+      height: 592px;
+    }
+
+    .header-button-container {
+      width: 100%;
+      padding-right: 220px;
+      height: auto;
+      padding-bottom: 60px;
+    }
+
+    .header-button {
+      height: 48px;
+      width: 288px;
+    }
+
+    .header {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      background-image: none;
+      height: 592px;
+    }
+
+    .header-container-desktop {
+      padding: 60px 100px 0 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 50%;
+      background-color: #caefff;
+    }
+
+    .header-title {
+      letter-spacing: -4px;
+      line-height: 1;
+      color: #000215;
+      font-weight: bold;
+      font-size: 80px;
+    }
+
+    .header-description {
+      font-size: 22px;
+      margin-top: 15px;
+      text-wrap: pretty;
+      width: 480px;
+      height: 64px;
+      color: #000;
+    }
+
+    .header-title span {
+      letter-spacing: -7px;
+      border-bottom: 2px solid black;
+    }
+  }
+</style>
