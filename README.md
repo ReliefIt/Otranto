@@ -1,54 +1,67 @@
-# Astro Starter Kit: Basics
+# Otranto Seguros
 
-```sh
-npm create astro@latest -- --template basics
-```
+Otranto Seguros es una página web diseñada para ayudarte a encontrar el seguro que mejor se adapte a tus necesidades. Con una interfaz simple y un formulario de contacto integrado, puedes buscar fácilmente la mejor alternativa para asegurar tus bienes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Puedes acceder a la página web desplegada en GitHub Pages en el siguiente enlace: [Otranto Seguros - GitHub Pages](https://reliefit.github.io/Otranto/)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Características
 
-## 🚀 Project Structure
+- **Interfaz Simple**: Otranto Seguros ofrece una experiencia de usuario intuitiva, diseñada para facilitar la búsqueda de seguros.
+- **Formulario de Contacto**: Un formulario integrado te permite enviar consultas y obtener respuestas personalizadas.
+- **SPA (Single Page Application)**: La aplicación es una SPA que garantiza una experiencia de navegación fluida y rápida.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Instalación
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+No es necesario instalar este proyecto localmente. Puedes acceder a la página web desplegada en GitHub Pages en el siguiente enlace: [Otranto Seguros - GitHub Pages](https://reliefit.github.io/Otranto/)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Uso
 
-## 🧞 Commands
+Para usar Otranto Seguros, simplemente sigue este enlace: [Otranto Seguros - GitHub Pages](https://reliefit.github.io/Otranto/). Desde allí, puedes explorar las opciones de seguro disponibles y utilizar el formulario de contacto si necesitas ayuda adicional.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Capturas de Pantalla
 
-## 👀 Want to learn more?
+Aquí tienes algunas capturas de pantalla de Otranto Seguros:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+![Captura de Pantalla 1](/screenshots/screenshot1.png)
+![Captura de Pantalla 2](/screenshots/screenshot2.png)
+
+---
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/feature-name`).
+3. Haz tus cambios y commitea (`git commit -am 'Agregar nueva funcionalidad'`).
+4. Empuja tus cambios al repositorio (`git push origin feature/feature-name`).
+5. Abre un Pull Request.
+
+---
+
+## Creadores del Proyecto
+
+- **Juan Marcos Lorenzo**
+- **Jonathan Ugarte**
+
+---
+
+## Cliente
+
+Este proyecto está dirigido a **Tomas Aranda**.
+
+---
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarnos en [correo electrónico de contacto] o a través del formulario de contacto en la página web.
+
+---

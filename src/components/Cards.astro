@@ -13,6 +13,7 @@ import Formulario from "../components/Formulario.astro";
   </div>
   <div class="card-cars-container">
     <article class="car-card">
+      /* IMG SVG CARDS */
       <!--?xml version="1.0" encoding="utf-8"?--><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
       <svg
         width="120"
@@ -238,6 +239,9 @@ import Formulario from "../components/Formulario.astro";
 </section>
 
 <style>
+
+  /* MEDIA QUERY MODO MOBILE*/
+
   .cards-container {
     display: flex;
     flex-direction: column;
@@ -247,6 +251,8 @@ import Formulario from "../components/Formulario.astro";
     background-color: #7dd8ff;
     gap: 20px;
   }
+  /*OCULTA LAS CARDS QUE SE MUESTRAN EN MODO DESKTOP */
+  
   .cards-container-desktop {
     display: none;
   }
@@ -317,6 +323,8 @@ import Formulario from "../components/Formulario.astro";
     font-size: 24px;
     color: #00205e;
   }
+  /* MEDIA QUERY MODO DESKTOP*/
+
   @media (min-width: 1440px) {
     .card-cars-container {
       display: flex;
@@ -345,6 +353,7 @@ import Formulario from "../components/Formulario.astro";
     .cards-group {
       display: none;
     }
+    /* CONTENEDOR QUE MUESTRA LAS CARDS MODO DESKTOP*/
     .cards-container-desktop {
       display: flex;
       gap: 30px;

@@ -23,7 +23,8 @@
 <style>
   /* Estilos para la animación */
 
-  .header-container, .header-button-container {
+  .header-container,
+  .header-button-container {
     opacity: 0; /* Inicialmente transparente */
     transform: translateX(-100%); /* Desplazar hacia la izquierda */
     animation: slide-from-left-animation 1s ease-out forwards; /* Aplicar animación */
@@ -42,19 +43,21 @@
       transform: translateX(0); /* Termina en su posición original */
     }
   }
+  /* MEDIA QUERY MOBILE */
 
   body {
     box-sizing: border-box;
     margin: 0;
     font-family: "Roboto", sans-serif;
   }
+  /* CONTENEDOR QUE OCULTA EL BACKGROUND DEL HEADER MODO DESKTOP*/
 
   .header-background-desktop {
     display: none;
   }
 
   header {
-    background-image: url("public/image-header-mobile.webp");
+    background-image: url("Otranto/dist/image-header-mobile.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -118,6 +121,7 @@
   /* MEDIA QUERY DESKTOP */
 
   @media (min-width: 1440px) {
+    /* CONTENEDOR DEL BACKGROUND MODO DESKTOP */
     .header-background-desktop {
       display: flex;
       background-image: url("public/image-header.webp");
@@ -147,6 +151,7 @@
       background-image: none;
       height: 592px;
     }
+    /* STYLES HEADER MODO DESKTOP*/
 
     .header-container-desktop {
       padding: 60px 100px 0 100px;
