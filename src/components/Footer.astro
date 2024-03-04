@@ -15,7 +15,7 @@
         <p>Organismo de control www.argentina.gob.ar/ssn</p>
       </div>
       <div class="grid-item-logo">
-        <img src="Otranto/dist/footer-logo-snn 1.png" alt="logo-SSN-seguros" />
+        <img src="public/footer-logo-snn 1.png" alt="logo-SSN-seguros" />
       </div>
     </div>
     <div class="footer-legales">
@@ -39,15 +39,15 @@
 <style>
   /* MEDIA QUERY MODO MOBILE*/
 
-    .footer-container {
-        display: none;
-    }
+  .footer-container {
+    display: none;
+  }
 
-@media (min-width: 1440px) {
-  /* MEDIA QUERY MODO DESKTOP */
-  
+  @media (min-width: 1440px) {
+    /* MEDIA QUERY MODO DESKTOP */
+
     @import url("https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
-  
+
     .footer-container {
       font-family: "Kullim Park", sans-serif;
       display: flex;
@@ -58,7 +58,7 @@
       width: 1440px;
       background-color: #ffffff;
     }
-  
+
     .grid-item {
       display: flex;
       padding: 20px;
@@ -67,12 +67,12 @@
       height: 72px;
       text-align: center;
     }
-  
+
     .grid-item-logo {
       padding: 20px 20px 20px 0;
       text-align: center;
     }
-  
+
     .footer {
       display: flex;
       flex-direction: column;
@@ -80,23 +80,26 @@
       height: 296px;
       width: 1120px;
     }
-  
+
     .footer-info {
       font-size: 20px;
       font-weight: 300;
       padding: 20px;
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño */
+      grid-template-columns: repeat(
+        4,
+        1fr
+      ); /* Crea 4 columnas de igual tamaño */
       gap: 20px; /* Agrega un espacio de 20px entre las columnas */
       height: 112px;
       width: 1120px;
     }
-  
+
     .footer-legales {
       font-size: 20px;
       height: 184px;
       width: 1120px;
     }
-}
+  }
 </style>
