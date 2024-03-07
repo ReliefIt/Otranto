@@ -5,7 +5,7 @@ import CardMotos from "../components/CardMotos.astro";
 import CardFabricas from "../components/CardFabricas.astro";
 ---
 
-<section class="slider-container">
+<section id= "slider"class="slider-container">
   <div class="slider">
     <a id="Hogar">
       <CardHogar />
@@ -53,11 +53,12 @@ import CardFabricas from "../components/CardFabricas.astro";
   }
 
   .slider-container {
-    height: 360px;
+    height: 410px;
   }
 
   .slider {
     scroll-timeline: --carousel x;
+   
     display: flex;
     flex-direction: row;
     border-radius: 4px;
@@ -66,7 +67,6 @@ import CardFabricas from "../components/CardFabricas.astro";
     aspect-ratio: 16/9;
 
     scroll-snap-type: x mandatory;
-    overscroll-behavior: contain;
     scroll-behavior: smooth;
 
     overflow-x: scroll;
@@ -114,6 +114,9 @@ import CardFabricas from "../components/CardFabricas.astro";
     list-style: none;
     font-size: 2em;
     bottom: 5rem;
+    margin: 0;
+    padding: 0;
+    height: 70px;
   }
   /* MEDIA QUERY MODO DESKTOP*/
 
