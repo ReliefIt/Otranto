@@ -4,7 +4,9 @@
 
 <section class="numbers-container">
   <div class="numbers">
-    <span>99%</span>
+    <div class="porcentaje">
+    <span id="number">0</span><span>%</span>
+  </div>
     <p>De nuestros clientes estan sastifechos</p>
   </div>
   <div class="numbers">
@@ -61,5 +63,43 @@
       height: 24px;
       width: 538px;
     }
+    .porcentaje{
+      display: flex;
+      gap: 13px;
+    }
   }
 </style>
+
+<script>
+      
+  const finalNumber = 100; // Número final al que se incrementará
+  let currentNumber = 0; // Número inicial   
+  const incrementAmount = 1; // Cantidad a incrementar en cada paso
+  let intervalTime = 50; // Tiempo en milisegundos entre cada incremento
+
+function incrementNumber() {
+if (currentNumber < finalNumber) {
+ const numberElement= document.getElementById("number")!;
+  numberElement.textContent = currentNumber.toString();
+  currentNumber += incrementAmount;
+  
+  // Ralentizar la animación cuando el número supere ciertos valores
+  if (currentNumber > 70) {
+    intervalTime = 100; // Ralentizar a 100 milisegundos
+  }
+  if (currentNumber > 80) {
+    intervalTime = 150; // Ralentizar a 150 milisegundos
+  }
+  if (currentNumber > 90) {
+    intervalTime = 200; // Ralentizar a 200 milisegundos
+  }
+  
+  setTimeout(incrementNumber, intervalTime);
+}
+}
+
+incrementNumber(); // Iniciar la animación cuando se cargue la página
+</script>
+
+
+
