@@ -11,12 +11,13 @@
         precio competitivo y con una excelente atención en siniestros.
       </p>
     </header>
-    <form action="" class="form">
+    <form action="" method="POST" class="form" id="form">
       <article class="form-top">
         <div class="form-top-group">
           <fieldset>
             <label for="">Nombre completo</label>
             <input
+              name="name"
               id="nombre-completo"
               type="text"
               placeholder="Ej: Tomás Hernandez"
@@ -27,6 +28,7 @@
           <fieldset>
             <label for="">Fecha de nacimiento</label>
             <input
+              name="date"
               placeholder="DD/MM/AAAA"
               type="number"
               class="form-top-group-input"
@@ -39,6 +41,7 @@
           <fieldset class="form-mid-group">
             <label for="">Provincia</label>
             <input
+              name="provincia"
               id="provincia"
               type="text"
               placeholder="Seleccione"
@@ -49,6 +52,7 @@
           <fieldset id="ciudad-fieldset">
             <label for="">Ciudad</label>
             <input
+              name="ciudad"
               id="ciudad"
               type="text"
               placeholder="Seleccione"
@@ -61,6 +65,7 @@
           <fieldset class="form-bottom-group">
             <label for="">Email</label>
             <input
+              name="email"
               id="email"
               type="email"
               placeholder="Ej: example@gmail.com"
@@ -71,6 +76,7 @@
           <fieldset class="form-bottom-group">
             <label for="">Código postal</label>
             <input
+              name="postal"
               id="codigo-postal"
               type="number"
               placeholder="Ej: 45780"
@@ -214,3 +220,48 @@
     }
   }
 </style>
+
+<!-- <script>
+  const API_KEY =
+    "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";
+
+    document.addEventListener('DOMContentLoaded', function() {
+    // Tu código aquí
+  });
+
+
+  const formulario = document.getElementById("formulario");
+    if (formulario) {
+        formulario.addEventListener("submit", function(event) {
+            // Captura los datos del formulario
+          const name = document.getElementById("nombre-completo").value;
+          const email = document.getElementById("email").value;
+
+            // Configura SendGrid
+          const sgMail = require("@sendgrid/mail");
+          sgMail.setApiKey(API_KEY);
+
+          // Construye el mensaje de correo electrónico
+          const msg = {
+            to: "correo@empresarial.com",
+            from: correo,
+            subject: "Nuevo mensaje desde el formulario de contacto",
+            text: `Nombre: ${nombre}\nCorreo electrónico: ${correo}\nMensaje: ${mensaje}`,
+          };
+
+          // Envía el correo electrónico
+          sgMail
+            .send(msg)
+            .then(() => {
+              alert("Correo electrónico enviado correctamente");
+            })
+            .catch((error) => {
+              console.error("Error al enviar el correo electrónico:", error);
+              alert("Hubo un problema al enviar el correo electrónico");
+            });
+          });
+    } else {
+        console.error("El elemento formulario no fue encontrado");
+    }
+
+</script> -->
