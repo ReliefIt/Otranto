@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 
 ---
 
@@ -15,7 +17,7 @@
         <p>Organismo de control www.argentina.gob.ar/ssn</p>
       </div>
       <div class="grid-item-logo">
-        <img src="../../public/footer-logo-snn 1.png" alt="logo-SSN-seguros" />
+        <Image src={import('../../public/footer-logo-snn 1.png')} alt="logo-SSN-seguros" />
       </div>
     </div>
     <div class="footer-legales">
@@ -40,17 +42,16 @@
   /* MEDIA QUERY MODO MOBILE*/
 
   .footer-container {
-    height: 75vh
+    height: 75vh;
   }
 
-
-  .footer{
+  .footer {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
-  .footer-info{
+  .footer-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,11 +61,9 @@
     gap: 13px;
     padding-top: 10px;
     border-bottom: 1px solid black;
-  
   }
 
-  .footer-legales{
-  
+  .footer-legales {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,9 +72,6 @@
     font-size: 30px;
     padding: 0 10px;
   }
-  
-
-
 
   @media (min-width: 1440px) {
     /* MEDIA QUERY MODO DESKTOP */
@@ -92,7 +88,6 @@
       background-color: #ffffff;
     }
 
-
     .grid-item {
       display: flex;
       padding: 20px;
@@ -106,7 +101,7 @@
       padding: 20px 20px 20px 0;
       text-align: center;
     }
-    
+
     .footer {
       display: flex;
       flex-direction: column;
